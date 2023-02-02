@@ -13,12 +13,10 @@ from models.user import User
 
 classes = [Amenity, City, Place, Review, State, User]
 
-
 @app_views.route('/status', strict_slashes=False)
 def index_status():
-    """Returns JSON status == OK"""
+    """Returns JSON status == OK""" 
     return jsonify(status="OK")
-
 
 @app_views.route('/stats', strict_slashes=False)
 def get_stats():
